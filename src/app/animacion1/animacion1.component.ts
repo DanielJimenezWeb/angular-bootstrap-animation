@@ -86,12 +86,12 @@ export class Animacion1Component implements AfterViewChecked {
 
   updateAnimation(): void {
     this.options = {
-      path: '/assets/animaciones/animation.json',
+      path: '/assets/animaciones/yoflotando.json',
     };
   }
 
   private createOptions(): void {
-    const tranferredAnimationData = this.lottieTransferState.get('/animation.json');
+    const tranferredAnimationData = this.lottieTransferState.get('/yoflotando.json');
 
     if (tranferredAnimationData) {
       this.options = {
@@ -99,7 +99,7 @@ export class Animacion1Component implements AfterViewChecked {
       };
     } else {
       this.options = {
-        path: '/assets/animaciones/animation.json',
+        path: '/assets/animaciones/yoflotando.json',
       };
     }
   }
