@@ -1,3 +1,602 @@
 <div class="demo">
     <ng-lottie *ngIf="shown" width="600px" height="500px" containerClass="moving-box moving-box-second-class" [styles]="styles" [options]="options"></ng-lottie>
 </div>
+
+
+
+    <!-- inicia fondo -->
+    <div class="col position-fixed" id="fondoweb">
+    </div>
+    <!-- Termna fondo -->
+    <header>
+
+        <!-- Fixed navbar -->
+        <nav id="navbar" class="py-1 navbar-expand-md navbar-dark fixed-top">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-auto">
+                        <div class="d-flex">
+
+                            <div class="flex-shrink-0">
+                                <div id="yomirando"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto col-md-3">
+                        <div class="d-flex flex-column ">
+                            <div class="navbar-brand flex-grow-1 fs-3 fw-light">ideaindividual</div>
+                            <div class="navbar-brand flex-grow-1 fs-6 fw-light">Diseño / Programación / Marketing</div>
+
+                        </div>
+                    </div>
+
+                    <div class="navbar d-block d-lg-none col-auto ms-auto">
+                        <a class="d-block d-lg-none navbar-toggler btn btn-primary py-3" data-bs-toggle="offcanvas"
+                            href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <i class="bi bi-list"></i>MENU
+                        </a>
+                    </div>
+
+                    <div class="col d-none d-lg-block ms-auto" id="navbar-example2">
+                        <!-- prueba -->
+                        <nav class="navbar col-auto ms-auto">
+
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#inicio"><i class="bi bi-house-door"></i> Inicio</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#conocimiento"><i class="bi bi-speedometer"></i>
+                                        Conocimientos</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#portafolio"><i class="bi bi-grid-1x2-fill"></i>
+                                        Portafolio</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- termina prueba -->
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- start menu de lado -->
+
+
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+        style="width: 280px;">
+
+        <div class="d-flex flex-nowrap h-100">
+
+            <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 100%;" id="navbar-example">
+                <div class="offcanvas-header">
+                    <a href="/"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <div id="yomirando2"></div>
+                        <span class="fs-5 fw-light">&nbsp;ideaindividual</span>
+                    </a>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <hr>
+
+                <ul class="nav nav-pills flex-column mb-auto">
+
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link text-white">
+                            <i class="bi bi-house-door"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#conocimiento" class="nav-link text-white">
+                            <i class="bi bi-speedometer"></i>
+                            Conocimientos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#portafolio" class="nav-link text-white">
+                            <i class="bi bi-grid-1x2-fill"></i>
+                            Portafolio
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-chat-right-text-fill"></i>&nbsp;CONTACTO
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <li><a class="dropdown-item"
+                                href="https://wa.me/56961100481?text=Hola%2C+estoy+interesado+en+uno+de+tus+servicios."><i
+                                    class="bi bi-whatsapp"></i>
+                                Whatsapp</a></li>
+                        <li><a class="dropdown-item" href="https://www.instagram.com/ideaindividual"><i
+                                    class="bi bi-instagram"></i>
+                                Instagram</a></li>
+                        <li><a class="dropdown-item" href="mailto:info@ideaindividual.com"><i
+                                    class="bi bi-envelope"></i>
+                                Email</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="tel:+56-961-100-481"><i
+                                    class="bi bi-telephone-outbound-fill"></i>
+                                ¡LLAMAR YA!</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="b-example-divider b-example-vr"></div>
+        </div>
+    </div>
+    <!-- end Menu botton  de lado-->
+
+
+    <!-- inicio de banner -->
+    <div class="flex-shrink-0" id="inicio">
+        <div class="container pt-5">
+            <main class="banner m-3">
+
+                <section class="text-center text-md-start container">
+
+                    <div class="row mt-5 bg-light rounded-4">
+                        <div class="col-lg-6 col-md-6 mx-auto">
+                            <div class="row position-relative">
+                                <div class="col" id="yoflotando">
+                                </div>
+                                <div class="col position-absolute bottom-50 end-50" id="bckgrdaynight">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="row h-100 align-items-center">
+                                <div class="col position-fixed bottom-50 end-0 translate-middle-y" id="btndaynight"
+                                    type="checkbox" onclick="setDarkMode()" style="bottom: 70% !important;"></div>
+                                <div class="col">
+                                    <h1 class="fw-light mt-3">Marketing y programación</h1>
+                                    <p class="lead text-muted">Diseñador Gráfico y programador front con amplia
+                                        experiencia
+                                        en mercados B2B Y B2C.</p>
+                                    <p>
+                                        <a href="#portafolio" class="btn btn-primary my-2"><i class="bi bi-images"></i>
+                                            Portafolio</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <!-- End banner -->
+
+    <!-- Conocimientos -->
+    <div class="flex-shrink-0" id="conocimiento">
+        <div class="container text-center pt-5">
+            <div class="row m-3">
+                <div class="col fondo rounded-4 pt-4 pb-5" id="sliderimage">
+                    <h3 class="text-center fw-light pb-3">Tecnologías de interes</h3>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner container">
+
+                            <div class="carousel-item active">
+                                <div class="row g-3">
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/17-iconos-sass.svg" class="img-responsive" alt="SASS">
+                                        <small class="text-muted text-break d-none d-lg-block">SASS</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/18-iconos-html5.svg" class="img-responsive" alt="HTML5">
+                                        <small class="text-muted text-break d-none d-lg-block">HTML5</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/19-iconos-ccs3.svg" class="img-responsive" alt="CCS3">
+                                        <small class="text-muted text-break d-none d-lg-block">CCS3</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/20-iconos-bootstrap.svg" class="img-responsive" alt="bootstrap">
+                                        <small class="text-muted text-break d-none d-lg-block">Bootstrap</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/21-iconos-javascript.svg" class="img-responsive" alt="Javascript">
+                                        <small class="text-muted text-break d-none d-lg-block">Javascript</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/22-iconos-mysql.svg" class="img-responsive" alt="Mysql">
+                                        <small class="text-muted text-break d-none d-lg-block">Mysql</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/23-iconos-laravel.svg" class="img-responsive" alt="Laravel">
+                                        <small class="text-muted text-break d-none d-lg-block">Laravel</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/29-iconos-power-bi.svg" class="img-responsive" alt="Power Bi">
+                                        <small class="text-muted text-break d-none d-lg-block">Power Bi</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/26-iconos-cpanel-whm.svg" class="img-responsive" alt="Cpanel Whm">
+                                        <small class="text-muted text-break d-none d-lg-block">Cpanel Whm</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/8-iconos-zeplin.svg" class="img-responsive" alt="Zeplin">
+                                        <small class="text-muted text-break d-none d-lg-block">Zeplin</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/9-iconos-figma.svg" class="img-responsive" alt="Figma">
+                                        <small class="text-muted text-break d-none d-lg-block">Figma</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/10-iconos-workspace-google.svg" class="img-responsive"
+                                            alt="Google Workspace">
+                                        <small class="text-muted text-break d-none d-lg-block">Google Workspace</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row g-3">
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/7-iconos-analitycs.svg" class="img-responsive"
+                                            alt="Google Analytics">
+                                        <small class="text-muted text-break d-none d-lg-block">Google Analytics</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/15-iconos-wordpress.svg" class="img-responsive"
+                                            alt="CMS WordPress">
+                                        <small class="text-muted text-break d-none d-lg-block">CMS WordPress</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/16-iconos-prestashop.svg" class="img-responsive"
+                                            alt="CMS PrestaShop">
+                                        <small class="text-muted text-break d-none d-lg-block">CMS PrestaShop</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/27-iconos-woocomerce.svg" class="img-responsive"
+                                            alt="Woocommerce">
+                                        <small class="text-muted text-break d-none d-lg-block">Woocommerce</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/11-iconos-mailchimp.svg" class="img-responsive" alt="MailChimp">
+                                        <small class="text-muted text-break d-none d-lg-block">MailChimp</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/25-iconos-omnisend.svg" class="img-responsive" alt="Omnisend">
+                                        <small class="text-muted text-break d-none d-lg-block">Omnisend</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/1-iconos-ilustrator.svg" class="img-responsive"
+                                            alt="Adobe Illustrator">
+                                        <small class="text-muted text-break d-none d-lg-block">Adobe Illustrator</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/2-iconos-indesing.svg" class="img-responsive"
+                                            alt="Adobe InDesign">
+                                        <small class="text-muted text-break d-none d-lg-block">Adobe InDesign</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/3-iconos-after.svg" class="img-responsive" alt="After Effects">
+                                        <small class="text-muted text-break d-none d-lg-block">After Effects</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/4-iconos-photoshop.svg" class="img-responsive"
+                                            alt="Adobe Photoshop">
+                                        <small class="text-muted text-break d-none d-lg-block">Adobe Photoshop</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/6-iconos-premier.svg" class="img-responsive"
+                                            alt="Adobe Premiere">
+                                        <small class="text-muted text-break d-none d-lg-block">Adobe Premiere</small>
+                                    </div>
+                                    <div class="col-2 col-lg">
+                                        <img src="assets/img/5-iconos-xd.svg" class="img-responsive" alt="Adobe XD">
+                                        <small class="text-muted text-break d-none d-lg-block">Adobe XD</small>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- conocimientos -->
+
+    <!-- inicia seccion gallerya -->
+    <div class="flex-shrink-0" id="portafolio">
+
+        <div class="container pt-5">
+            <h2 class="text-center fw-light text-white">Portafolio Freelancer</h2>
+                <p class="lead text-center pb-5 text-white">Algunos trabajos de diseños, web y marketing realizados para
+                    empresas de manera
+                    particular.</p>
+                <!-- Buscador rapido -->
+                <input class="form-control" id="myInput" type="text" placeholder="Buscar video, web, impresos ...">
+                <!-- Buscador termina -->
+                <p class="lead text-center pb-5 text-white">Utilizas palabras claves como:<b class="text-primary">
+                        video, web, impreso, montaje... </b></p>
+
+                <div class="row row-cols-2" data-masonry='{"percentPosition": true }' id="myDIV">
+
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+
+                        <div class="card text-center">
+                            <img src="assets/img/trabajos/15-empaque-ideaindividual.jpg" class="card-img-top"
+                                alt="empaque ideaindividual">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Impreso / Empaque / Gráfica</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+                        <div class="card text-bg-primary text-center p-3">
+                            <figure class="mb-0">
+                                <blockquote class="blockquote">
+                                    <p>No los dejes saber tu próximo movimiento.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer mb-0 text-white">
+                                    papa <cite title="Source Title">Chayanne</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+
+                        <div class="card text-center">
+                            <img src="assets/img/trabajos/12-impreso-revista-ideaindividual.jpg" class="card-img-top"
+                                alt="Revista publicidad ideaindividual">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Impreso / Revista / Publicidad / Gráfica</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+                        <div class="card text-center">
+                            <video autoplay controls loop class="card-img-top">
+                                <source src="assets/img/trabajos/14-video-muestra-web-ideaindividual.mp4" type="video/mp4"
+                                    alt="video muestra web ideaindividual">
+                            </video>
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Video / Web</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+                        <div class="card text-center">
+                            <video autoplay controls loop class="card-img-top">
+                                <source src="assets/img/trabajos/13-personacompleta_1-ideaindividual.mp4" type="video/mp4"
+                                    alt="persona saltando animada ideaindividual">
+                            </video>
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Video / Animado</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+                        <div class="card p-3 text-end">
+                            <figure class="mb-0">
+                                <blockquote class="blockquote">
+                                    <p>Los limites no existen.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer mb-0 text-muted">
+                                    Algún desconocido <cite title="Source Title">Desconocido</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+
+                        <div class="card text-center">
+                            <img src="assets/img/trabajos/11-dashboard-task-erp-ideaindividual.jpg" class="card-img-top"
+                                alt="dashboard task erp ideaindividual">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Web / Dashboard / Gráfico</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+
+                        <div class="card text-center">
+                            <img src="assets/img/trabajos/10-isotipo-turner-painting-ltd-ideaindividual.jpg"
+                                class="card-img-top" alt="isotipo logo turner painting ltd ideaindividual">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Logo / Gráfica / Icono</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+
+                        <div class="card text-center">
+                            <img src="assets/img/trabajos/9-bruja-marina-logo-ideaindividual.jpg" class="card-img-top"
+                                alt="bruja marina logo ideaindividual">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Logo / Gráfica / Exterior</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+
+                        <div class="card text-center">
+                            <img src="assets/img/trabajos/8-web-turner-painting-tld-ideaindividual.jpg" class="card-img-top"
+                                alt="web turner painting tld ideaindividual">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Web / Gráfica</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+                        <div class="card text-center">
+                            <img src="assets/img/trabajos/7-sitio-web-ideaindividual.jpg" class="card-img-top"
+                                alt="sitio web ideaindividual">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Web / Gráfica</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+                        <div class="card text-center">
+                            <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="2000">
+                                        <img src="assets/img/trabajos/6-bussinescars-turner-ideaindividual-2.jpg"
+                                            class="d-block w-100" alt="Tarjeta de preentacion ideaindividual">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="1000">
+                                        <img src="assets/img/trabajos/6-bussinescars-turner-1-ideaindividual.jpg"
+                                            class="d-block w-100" alt="Tarjeta de preentacion ideaindividual">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Impreso/ Tarjeta de presentación / Gráfica</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+                        <div class="card text-center">
+                            <img src="assets/img/trabajos/5-vista-mobile-web-daniel-jimenez.jpg" class="card-img-top"
+                                alt="vista mobile web ideaindividual">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Web / Teléfono / Gráfica</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+                        <div class="card text-center">
+                            <img src="assets/img/trabajos/4-logo-luxor-ideaindividual.jpg" class="card-img-top"
+                                alt="logo luxor ideaindividual">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Logo / Gráfica</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+                        <div class="card text-center">
+                            <img src="assets/img/trabajos/3-impreso-revista-ideaindividual.jpg" class="card-img-top"
+                                alt="impreso ideaindividual">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Impreso/ Revista/ Gráfica</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+                        <div class="card text-center">
+                            <img src="assets/img/trabajos/2-impreso-revista-cine-ideaindividual.jpg" class="card-img-top"
+                                alt="impreso ideaindividual">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Impreso/ Revista/ Gráfica</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 m-0 p-0 mb-lg-4 px-lg-2">
+                        <div class="card text-center">
+                            <img src="assets/img/trabajos/1-logo-medicina-estetica-ideaindividual.jpg" class="card-img-top"
+                                alt="logo Medicina ideaindividual">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-light">Logo / Gráfica</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+        </div>
+    </div>
+    <!-- Termina seccion galerrya -->
+
+
+    <!-- inicia footer -->
+    <footer class="footer mt-auto py-1 bg-light sticky-bottom">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col">
+                    <small class="text-muted">Todos los derechos reservados 2023</small>
+                </div>
+                <div class="col-auto">
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle text-muted"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-chat-right-text-fill"></i>&nbsp;CONTACTO
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item"
+                                    href="https://wa.me/56961100481?text=Hola%2C+estoy+interesado+en+uno+de+tus+servicios."><i
+                                        class="bi bi-whatsapp"></i>
+                                    Whatsapp</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="tel:+56-961-100-481"><i
+                                        class="bi bi-telephone-outbound-fill"></i>
+                                    ¡LLAMAR YA!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- inicia scrips -->
+
