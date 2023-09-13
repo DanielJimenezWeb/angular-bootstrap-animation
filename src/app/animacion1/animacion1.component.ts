@@ -86,7 +86,7 @@ export class Animacion1Component {
 
   updateAnimation(): void {
     this.options = {
-      path: '/assets/animation.json',
+      path: '/assets/animacion1/animation.json',
     };
   }
 
@@ -99,7 +99,7 @@ export class Animacion1Component {
       };
     } else {
       this.options = {
-        path: '/assets/animation.json',
+        path: '/assets/animacion1/animation.json',
       };
     }
   }
