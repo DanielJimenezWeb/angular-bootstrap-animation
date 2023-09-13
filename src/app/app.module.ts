@@ -8,12 +8,14 @@ import { Animacion1Component } from './animacion1/animacion1.component';
 // importacion de animaciones
 import { HttpClientModule } from '@angular/common/http';
 import { LottieComponent, provideLottieOptions, provideCacheableAnimationLoader } from 'ngx-lottie';
+import { Animacion2Component } from './animacion2/animacion2.component';
 // termina importacion de animaciones
 
 @NgModule({
   declarations: [
     AppComponent,
-    Animacion1Component
+    Animacion1Component,
+    Animacion2Component
   ],
   imports: [
     // BrowserModule,
