@@ -15,7 +15,7 @@ import { AnimationOptions, BMDestroyEvent, LottieTransferState } from 'ngx-lotti
   changeDetection: ChangeDetectionStrategy.OnPush
   // Termina importacion de animaciones
 })
-export class Animacion1Component {
+export class Animacion1Component implements AfterViewChecked {
   // importacion de animaciones
   options!: AnimationOptions;
   shown = true;
@@ -86,7 +86,7 @@ export class Animacion1Component {
 
   updateAnimation(): void {
     this.options = {
-      path: '/assets/animacion1/animation.json',
+      path: '/assets/animaciones/animation.json',
     };
   }
 
@@ -99,7 +99,7 @@ export class Animacion1Component {
       };
     } else {
       this.options = {
-        path: '/assets/animacion1/animation.json',
+        path: '/assets/animaciones/animation.json',
       };
     }
   }
