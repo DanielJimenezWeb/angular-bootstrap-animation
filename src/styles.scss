@@ -8,12 +8,14 @@
  }
   .fondoweb {
       z-index: -100;
+      max-height: 100% !important;
     
   }
 
   div#carouselExampleIndicators {
       filter: brightness(0.4);
   }
+
   nav#navbar.fixed-top.scrolled {
       background-color:#2f2f2f !important;
       transition: background-color 200ms linear;
