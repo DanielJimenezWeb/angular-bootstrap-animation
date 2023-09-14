@@ -22,7 +22,7 @@ import { Animacion2Component } from './animacion2/animacion2.component';
     AppRoutingModule,
 
     // importacion de animaciones
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'ngx-lottie-universal' }),
     HttpClientModule,
     LottieComponent
     // termina importacion de animaciones
