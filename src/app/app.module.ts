@@ -7,7 +7,7 @@ import { Animacion1Component } from './animacion1/animacion1.component';
 
 // importacion de animaciones
 import { HttpClientModule } from '@angular/common/http';
-import { LottieComponent, provideLottieOptions, provideCacheableAnimationLoader } from 'ngx-lottie';
+import { LottieComponent, provideLottieOptions, provideCacheableAnimationLoader, LottieModule, LottieCacheModule } from 'ngx-lottie';
 import { Animacion2Component } from './animacion2/animacion2.component';
 // termina importacion de animaciones
 
@@ -24,6 +24,8 @@ import { Animacion2Component } from './animacion2/animacion2.component';
     // importacion de animaciones
     BrowserModule.withServerTransition({ appId: 'ngx-lottie-universal' }),
     HttpClientModule,
+    LottieModule,
+    LottieCacheModule,
     LottieComponent
     // termina importacion de animaciones
   ],
