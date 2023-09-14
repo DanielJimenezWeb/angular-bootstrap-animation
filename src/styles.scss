@@ -1,16 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
  svg#clouds {
      position: fixed;
-     bottom: -160px;
-     left: -230px;
+     bottom: -180px;
      z-index: 10;
-     width: 1920px;
+     width: 100%;
  }
   .fondoweb {
       z-index: -100;
-      max-height: 100% !important;
-    
+      width: 150%;
   }
+
+  @media screen and (max-width: 1500px) {
+
+    .fondoweb {
+            z-index: -100;
+            width: 2000px;
+        }
+                svg#clouds {
+                    position: fixed;
+                    bottom: -250px;
+                    left: -230px;
+                    width: 2000px;
+                    z-index: 10;
+                }
+      }
 
   div#carouselExampleIndicators {
       filter: brightness(0.4);
