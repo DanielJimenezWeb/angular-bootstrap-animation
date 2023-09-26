@@ -15,6 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
+          
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/angular-bootstrap-animation",
@@ -27,7 +28,10 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/animaciones/animation.json",
+              "src/assets/animaciones/fondo.json",
+              "src/assets/animaciones/yoflotando.json"
             ],
             "styles": [
               "node_modules/bootstrap/scss/bootstrap.scss",
